@@ -1,13 +1,13 @@
-def evencheck(number):
-    if number % 2 == 0:
-        return "even"
-    else:
-        return "odd"
-n = int(input("enter your range: "))
-total = 0
-for i in range(1,n+1):
-    num = int(input("enter number {}:".format(i)))
-    total = total+num
-    result = evencheck(total)
-    print(result)    
+def even_or_odd_check():
+    """Prompt the user for a number and check if each number is even or odd."""
+    n = int(input("Enter your range: "))
     
+    for i in range(1, n + 1):
+        num = int(input(f"Enter number {i}: "))
+        if num % 2 == 0:
+            print("even")
+        else:
+            print("odd")
+
+if __name__ == "__main__":
+    even_or_odd_check()
