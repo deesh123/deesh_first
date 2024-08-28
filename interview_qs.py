@@ -9,5 +9,5 @@ def even_or_odd_check():
         else:
             print("odd")
 
-if __name__ == "__main__":
-    even_or_odd_check()
+# Directly call the function
+even_or_odd_check()
